@@ -7,5 +7,6 @@ Other directories - three versions of tinySLAM source code:
 - without observers
 - reserve memory
 
-profiling_manual - read it before doing something
+profiling_manual.pdf - read it before doing something
+MikhalevTinySlam.pdf - results of profiling
 tiny_slam - video showing how tinySLAM works.
