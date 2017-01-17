@@ -1,0 +1,6 @@
+1) Compile with flag -pg
+2) Run without gprof (like $ ./main.out <args>)
+3) File gmon.out is being created in current dir.
+4) Run: $ gprof (./xgprof) ./main.out gmon.out
+5) Run: $ gprof ./main.out > profile
+6) Run: $ gprof2dot ./profile | dot -Tsvg -o output.svg (получаем граф вызовов)

@@ -1,0 +1,8 @@
+1) $ sudo apt-get install google-perftools libgoogle-perftools0 (это не ставил) libgoogle-perftools-dev
+2) $ g++ main.cpp -o main_gperftools -lprofiler -Wl,--no-as-needed -lprofiler -Wl,--as-needed
+3) $ CPUPROFILE=out.ptof ./main_gperftools (програ отрабатывает + в директории появляется файл out.prof)
+4) $ google-pprof --text ./main_gperftools out.prof 
+	--text — таблица, подобная выводу gprof;
+	--callgrind — вывод в формате, совмeстимом с утилитой kcachegrind (из пакета valgrind);
+	--gv — граф вызовов, немедленно отобpажаемый на экране;
+5) Пример на https://xakep.ru/2011/03/22/55102/
