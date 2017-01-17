@@ -8,5 +8,7 @@ Other directories - three versions of tinySLAM source code:
 - reserve memory
 
 profiling_manual.pdf - read it before doing something
+
 MikhalevTinySlam.pdf - results of profiling
+
 tiny_slam - video showing how tinySLAM works.
